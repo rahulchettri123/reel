@@ -1,0 +1,34 @@
+{
+  "popular_critics": [
+    {
+      "id": "102",
+      "points": 567,
+      "rank": 1
+    },
+    {
+      "id": "106",
+      "points": 412,
+      "rank": 2
+    },
+    {
+      "id": "101",
+      "points": 324,
+      "rank": 3
+    },
+    {
+      "id": "103",
+      "points": 289,
+      "rank": 4
+    },
+    {
+      "id": "105",
+      "points": 278,
+      "rank": 5
+    },
+    {
+      "id": "104",
+      "points": 156,
+      "rank": 6
+    }
+  ]
+} 

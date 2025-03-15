@@ -1,0 +1,53 @@
+/* Full-page background */
+.register-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    width: 100vw;
+  }
+  
+  /* Register container - centered */
+  .register-container {
+    width: 700px;
+    padding: 40px;
+    background-color: rgba(20, 20, 20, 0.85);
+    border-radius: 10px;
+  }
+  
+  /* Input fields */
+  .register-input {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  .register-input::placeholder {
+    color: #aaa;
+  }
+  
+  .register-input:focus {
+    background-color: #444;
+    color: white;
+    outline: none;
+    border: 1px solid red;
+  }
+  
+  /* Register button */
+  .register-btn {
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  /* Links */
+  .register-link {
+    text-decoration: none;
+  }
+  
+  .register-link:hover {
+    text-decoration: underline;
+  }
+  

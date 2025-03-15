@@ -1,0 +1,112 @@
+{
+  "comments": [
+    {
+      "id": "1",
+      "reviewId": "1",
+      "userId": "201",
+      "content": "The hallway fight scene is definitely my favorite! The way they played with gravity was mind-blowing.",
+      "createdAt": "2023-05-15T15:10:00Z",
+      "likes": 12,
+      "isLiked": false
+    },
+    {
+      "id": "2",
+      "reviewId": "1",
+      "userId": "202",
+      "content": "I love the ending! The spinning top keeps me guessing every time.",
+      "createdAt": "2023-05-15T15:45:00Z",
+      "likes": 8,
+      "isLiked": true
+    },
+    {
+      "id": "3",
+      "reviewId": "1",
+      "userId": "103",
+      "content": "The scene where they're floating in the hotel is iconic. The practical effects were amazing!",
+      "createdAt": "2023-05-15T16:20:00Z",
+      "likes": 15,
+      "isLiked": false
+    },
+    {
+      "id": "4",
+      "reviewId": "2",
+      "userId": "104",
+      "content": "The character development in this film is so well done. Each person has their own motivations and arc.",
+      "createdAt": "2023-05-15T17:05:00Z",
+      "likes": 6,
+      "isLiked": false
+    },
+    {
+      "id": "5",
+      "reviewId": "1",
+      "userId": "105",
+      "content": "Hans Zimmer's score elevates every scene. The 'Time' track still gives me chills!",
+      "createdAt": "2023-05-15T17:40:00Z",
+      "likes": 19,
+      "isLiked": true
+    },
+    {
+      "id": "6",
+      "reviewId": "3",
+      "userId": "106",
+      "content": "The social commentary is so relevant. The contrast between the two families is brilliantly portrayed.",
+      "createdAt": "2023-05-13T10:15:00Z",
+      "likes": 22,
+      "isLiked": false
+    },
+    {
+      "id": "7",
+      "reviewId": "3",
+      "userId": "101",
+      "content": "The twist in the middle completely changed the tone of the film. Masterful direction!",
+      "createdAt": "2023-05-13T11:30:00Z",
+      "likes": 17,
+      "isLiked": true
+    },
+    {
+      "id": "8",
+      "reviewId": "4",
+      "userId": "102",
+      "content": "Marlon Brando's performance as Don Corleone is one of the greatest in cinema history.",
+      "createdAt": "2023-05-12T17:45:00Z",
+      "likes": 25,
+      "isLiked": false
+    },
+    {
+      "id": "9",
+      "reviewId": "4",
+      "userId": "103",
+      "content": "The baptism scene intercut with the assassinations is pure cinematic genius.",
+      "createdAt": "2023-05-12T18:20:00Z",
+      "likes": 20,
+      "isLiked": true
+    },
+    {
+      "id": "10",
+      "reviewId": "5",
+      "userId": "104",
+      "content": "The diner scene with Jules and Vincent is my favorite. The dialogue is so natural yet memorable.",
+      "createdAt": "2023-05-11T12:10:00Z",
+      "likes": 14,
+      "isLiked": false
+    },
+    {
+      "id": "11",
+      "reviewId": "5",
+      "userId": "106",
+      "content": "The way Tarantino plays with chronology makes the film so engaging. You have to piece it together.",
+      "createdAt": "2023-05-11T13:25:00Z",
+      "likes": 16,
+      "isLiked": true
+    },
+    {
+      "id": "12",
+      "reviewId": "6",
+      "userId": "101",
+      "content": "Heath Ledger's Joker is terrifying because he's so unpredictable. A truly iconic performance.",
+      "createdAt": "2023-05-10T14:40:00Z",
+      "likes": 28,
+      "isLiked": false
+    }
+  ]
+} 

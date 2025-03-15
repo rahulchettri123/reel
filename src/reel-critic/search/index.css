@@ -1,0 +1,31 @@
+/* ✅ Wrapper to ensure all images have the same height */
+.image-container {
+    width: 100%;
+    height: 250px; /* Set fixed height for all images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* ✅ Ensure images maintain aspect ratio and fit inside the container */
+  .fixed-height-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the space properly */
+  }
+  
+  /* ✅ Placeholder for missing images */
+  .no-image-container {
+    width: 100%;
+    height: 250px; /* Same height as images */
+    background-color: #444; /* Dark background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  

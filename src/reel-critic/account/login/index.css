@@ -1,0 +1,58 @@
+/* Full-page background */
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    width: 100vw;
+  }
+  
+  /* Login container - centered */
+  .login-container {
+    width: 700px;
+    padding: 40px;
+    background-color: rgba(20, 20, 20, 0.85);
+    border-radius: 10px;
+  }
+  
+  /* Input fields */
+  .login-input {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  .login-input::placeholder {
+    color: #aaa;
+  }
+  
+  .login-input:focus {
+    background-color: #444;
+    color: white;
+    outline: none;
+    border: 1px solid red;
+  }
+  
+  /* Login button */
+  .login-btn {
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  /* Links */
+  .login-link {
+    text-decoration: none;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Fix forgot password visibility */
+  .text-muted {
+    color: #ccc !important;
+  }
+  

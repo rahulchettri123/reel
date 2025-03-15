@@ -1,0 +1,334 @@
+/* MovieDetails.css */
+
+.movie-details-page {
+  background-color: #141414;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.movie-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movie-poster {
+  max-height: 500px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.movie-meta .badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.text-truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.review-item {
+  transition: all 0.3s ease;
+}
+
+.review-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  .movie-details-container {
+    padding: 1.5rem;
+  }
+  
+  .movie-poster {
+    max-height: 400px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .movie-meta .badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-details-page {
+    padding-top: 70px;
+  }
+  
+  .movie-details-container {
+    padding: 1rem;
+  }
+  
+  .movie-poster {
+    max-height: 350px;
+    margin: 0 auto 1.5rem;
+    display: block;
+  }
+  
+  h1.text-light {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .movie-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .comment-bubble {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .movie-details-page {
+    padding-top: 66px;
+  }
+  
+  .movie-details-container {
+    padding: 0.75rem;
+  }
+  
+  .movie-poster {
+    max-height: 300px;
+  }
+  
+  h1.text-light {
+    font-size: 1.5rem;
+  }
+  
+  .movie-meta .badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+  }
+  
+  .review-item {
+    padding: 0.75rem;
+  }
+  
+  /* Improve comment section on small screens */
+  .comment-bubble {
+    padding: 6px 10px;
+  }
+  
+  .comment-username, .comment-timestamp {
+    font-size: 0.75rem;
+  }
+  
+  /* Make buttons more touch-friendly */
+  .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Ensure form elements are usable on mobile */
+  .comment-input {
+    font-size: 0.875rem;
+    padding-left: 10px !important;
+  }
+}
+
+/* Comments section styling */
+.comments-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.comments-list {
+  margin-top: 2rem;
+}
+
+/* Comment card styling */
+.comment-card {
+  background-color: #252525;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
+.comment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Form styling */
+.form-control {
+  background-color: #2a2a2a !important;
+  border: 1px solid #333 !important;
+  color: #fff !important;
+}
+
+.form-control:focus {
+  background-color: #2a2a2a !important;
+  border-color: #4a4a4a !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+.form-control::placeholder {
+  color: #888 !important;
+}
+
+/* Button styling */
+.btn-outline-light:hover {
+  background-color: #ffffff20;
+}
+
+/* Like button styling */
+.like-button {
+  background: transparent;
+  border: 1px solid #ffffff40;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.like-button:hover {
+  background-color: #ffffff10;
+  border-color: #ffffff60;
+}
+
+.like-button.liked {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Username and timestamp styling */
+.comment-username {
+  color: #fff;
+  font-weight: 600;
+}
+
+.comment-timestamp {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Like count styling */
+.like-count {
+  color: #888;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+
+/* Animation for likes */
+@keyframes likeAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.like-animation {
+  animation: likeAnimation 0.3s ease;
+}
+
+/* Comment section styling */
+.bg-dark-secondary {
+  background-color: #1e1e1e !important;
+  border-color: #333 !important;
+}
+
+/* Comment input styling */
+.comment-input {
+  background-color: #2a2a2a !important;
+  border: 1px solid #333 !important;
+  color: #fff !important;
+  border-radius: 20px !important;
+  padding-left: 15px !important;
+}
+
+.comment-input:focus {
+  box-shadow: none !important;
+  border-color: #555 !important;
+}
+
+/* Comment bubble styling */
+.comment-bubble {
+  background-color: #2a2a2a;
+  border-radius: 18px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+/* Comment actions styling */
+.comment-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.comment-action-btn {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 0.8rem;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.comment-action-btn:hover {
+  color: #fff;
+}
+
+.comment-action-btn.active {
+  color: #dc3545;
+}
+
+/* Review form styling */
+.review-form-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star-rating svg {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.star-rating svg:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive adjustments for review form */
+@media (max-width: 768px) {
+  .star-rating svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Animation for star rating */
+@keyframes starPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.star-animation {
+  animation: starPulse 0.3s ease;
+}

@@ -1,0 +1,644 @@
+/* Browser-specific outline removal */
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* Target WebKit browsers */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  -webkit-appearance: none;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* Target Firefox */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Target IE */
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+/* Universal outline removal */
+* {
+  outline: none !important;
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Specific override for React Bootstrap components */
+.form-control:focus,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+.btn:focus,
+.btn-primary:focus,
+.btn-secondary:focus,
+.btn:active:focus,
+.btn-primary:active:focus,
+.btn-secondary:active:focus {
+  outline: 0 !important;
+  outline-color: transparent !important;
+  outline-width: 0 !important;
+  outline-style: none !important;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0) !important;
+}
+
+/* Extra specific search input styles */
+.search-input {
+  outline: 0 !important;
+  outline-width: 0 !important;
+  outline-color: transparent !important;
+  outline-style: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Global style to remove Bootstrap focus outlines */
+.list-group,
+.list-group-item,
+.list-group-item-action {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Global no-outline class */
+.no-outline,
+.no-outline:focus,
+.no-outline:active,
+.no-outline *,
+.no-outline *:focus,
+.no-outline *:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* General navbar styles */
+.nav-item {
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Active link style */
+  .active-nav {
+    color: red !important;
+    position: relative;
+  }
+  
+  .active-nav::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+  }
+  
+  /* Navbar background */
+  .navbar {
+    background-color: black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Netflix-style Search Bar */
+  .custom-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Remove all outlines from search components */
+  .custom-search,
+  .custom-search *,
+  .search-wrapper,
+  .search-input,
+  .search-container * {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(50, 50, 50, 0.8); /* Dark grey background */
+    padding: 8px 12px;
+    border-radius: 30px;
+    width: 260px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1002; /* Higher than dropdown */
+    border: none !important;
+  }
+  
+  /* Override for search wrapper to ensure no outlines */
+  .search-wrapper,
+  .search-wrapper:focus,
+  .search-wrapper:focus-within,
+  .search-wrapper:active,
+  .search-wrapper:hover {
+    outline: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+  }
+  
+  /* Expand search wrapper on focus */
+  .search-wrapper:focus-within {
+    width: 280px;
+    background-color: rgba(60, 60, 60, 0.9);
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  
+  /* Ensure search bar does NOT turn white when clicked */
+  .search-input {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: white !important;
+    padding-left: 35px;
+    font-size: 15px;
+    width: 100%;
+  }
+  
+  .search-input::placeholder {
+    color: rgba(200, 200, 200, 0.7);
+  }
+  
+  /* Search Icon */
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    color: rgba(200, 200, 200, 0.7);
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Change search icon color on focus */
+  .search-wrapper:focus-within .search-icon {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Remove blue outline when clicking inside the search bar */
+.search-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  
+  body {
+    background-color: black;
+    padding-top: 76px; /* Add padding to account for fixed navbar */
+ }
+  
+ /* 🔍 Ensure the dropdown appears below the search bar */
+.search-container {
+  position: relative;
+  width: 280px;
+    z-index: 1001; /* Ensure dropdown appears above other elements */
+  }
+  
+  /* Add subtle animation for dropdown */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* 🔍 Netflix-style Search Dropdown */
+  .netflix-search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+    background-color: rgba(20, 20, 20, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+    max-height: 250px; /* Further reduced height */
+  overflow-y: auto;
+  margin-top: 5px;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.2s ease-out;
+    outline: none; /* Remove outline */
+  }
+  
+  /* Custom scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+  .netflix-search-dropdown::-webkit-scrollbar {
+    width: 5px; /* Slightly thinner scrollbar */
+  }
+  
+  .netflix-search-dropdown::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+  }
+  
+  .netflix-search-dropdown::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+  }
+  
+  .netflix-search-dropdown::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Override Bootstrap ListGroup styles */
+  .netflix-search-dropdown.list-group {
+    border-radius: 4px;
+    outline: none; /* Remove outline */
+  }
+  
+  /* Netflix-style Search Item */
+  .netflix-search-item {
+    padding: 8px 16px; /* Further reduced vertical padding */
+  cursor: pointer;
+    color: #e5e5e5;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    line-height: 1.4; /* Add line height to prevent text overlap */
+    transition: background 0.2s, color 0.2s;
+    outline: none; /* Remove outline */
+  }
+  
+  /* Search item content container */
+  .search-item-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    padding: 2px 0; /* Add slight vertical padding inside the content */
+  }
+  
+  /* Movie title styling */
+  .movie-title {
+    font-weight: 500;
+    vertical-align: middle;
+  }
+  
+  /* Movie type styling */
+  .movie-type {
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-left: 4px;
+    font-weight: normal;
+    vertical-align: middle;
+  }
+  
+  /* Override Bootstrap ListGroup Item styles */
+  .list-group-item.netflix-search-item {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 16px; /* Match the padding above */
+    margin-bottom: 0; /* Ensure no extra margin causing overlap */
+    display: block; /* Ensure proper block display */
+    outline: none; /* Remove outline */
+  }
+  
+  .netflix-search-item:last-child {
+    border-bottom: none;
+  }
+  
+  .netflix-search-item:hover,
+  .netflix-search-item:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+    outline: none;
+  }
+  
+  /* Add a subtle indicator for the focused item */
+  .netflix-search-item:focus {
+    outline: none; /* Remove outline */
+    box-shadow: inset 3px 0 0 #e50914; /* Keep only the left indicator */
+  }
+  
+  .movie-type {
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-left: 4px;
+  }
+  
+  /* Custom button styles */
+  .custom-login-btn, .custom-signup-btn {
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  .custom-login-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .custom-signup-btn {
+    background-color: #e50914;
+    border-color: #e50914;
+  }
+  
+  .custom-signup-btn:hover {
+    background-color: #f40612;
+    border-color: #f40612;
+  }
+  
+  /* Card styles for consistent spacing */
+  .card {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  /* Consistent spacing for containers */
+  .container-fluid, .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  /* Form control overrides to remove all outlines */
+  input,
+  input:focus,
+  input:active,
+  input:hover,
+  .form-control,
+  .form-control:focus,
+  .form-control:active,
+  .form-control:hover,
+  .form-control-* {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Improve form controls */
+  .form-control {
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+  }
+  
+  /* Improve button alignment */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Improve badge alignment */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35em 0.65em;
+  }
+  
+  /* Remove all outlines from search components */
+  .netflix-search-dropdown,
+  .netflix-search-dropdown *,
+  .list-group-item,
+  .list-group-item:focus,
+  .list-group-item:active,
+  .list-group-item:hover {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Only keep the left red indicator for focus state */
+  .netflix-search-item:focus {
+    box-shadow: inset 3px 0 0 #e50914 !important;
+  }
+
+/* Specific search input styling to prevent outlines */
+.search-input-no-outline {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  border: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+.search-input-no-outline:focus,
+.search-input-no-outline:active,
+.search-input-no-outline:hover {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  border: none !important;
+}
+
+/* Text truncation for reviews */
+.text-truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Dark secondary background for inputs */
+.bg-dark-secondary {
+  background-color: #2a2a2a !important;
+}
+
+/* Remove outline from search input */
+.search-input-no-outline:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #343a40 !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container-fluid, .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .nav-item {
+    padding: 0.5rem 0;
+  }
+  
+  .search-container {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .search-wrapper {
+    width: 100%;
+  }
+  
+  .search-wrapper:focus-within {
+    width: 100%;
+  }
+  
+  .netflix-search-dropdown {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 66px; /* Adjust padding for smaller navbar on mobile */
+  }
+  
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+  
+  .custom-login-btn, .custom-signup-btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .search-wrapper {
+    padding: 6px 10px;
+  }
+  
+  .search-input {
+    font-size: 14px;
+  }
+  
+  /* Adjust card layouts for mobile */
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  /* Stack buttons on mobile */
+  .d-flex.gap-4 {
+    flex-wrap: wrap;
+    gap: 0.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.25rem !important;
+  }
+  
+  /* Further reduce padding */
+  .container-fluid, .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Make sure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Adjust form elements for better mobile experience */
+  .form-control {
+    font-size: 14px;
+    padding: 0.375rem 0.5rem;
+  }
+  
+  /* Ensure buttons are large enough for touch */
+  .btn {
+    padding: 0.375rem 0.75rem;
+    min-height: 38px;
+  }
+  
+  /* Adjust spacing for mobile */
+  .py-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  /* Ensure text is readable on small screens */
+  h1 {
+    font-size: 1.75rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* Ensure buttons display inline on large screens */
+@media (min-width: 992px) {
+  .custom-login-btn, .custom-signup-btn {
+    min-width: 100px;
+    margin: 0 5px;
+  }
+  
+  .navbar .nav-link {
+    width: auto !important;
+  }
+  
+  /* Fix flex wrapping for large screens */
+  .flex-lg-nowrap {
+    flex-wrap: nowrap !important;
+  }
+}
+
+/* Navigation button container */
+.navbar .flex-lg-row {
+  gap: 10px !important;
+}
+
+/* Ensure buttons have proper spacing */
+@media (min-width: 992px) {
+  .navbar .flex-lg-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  
+  .navbar .nav-link {
+    padding: 0 !important;
+    margin: 0 5px !important;
+  }
+}

@@ -1,0 +1,437 @@
+.posts-container {
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.feed-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.post-card {
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+}
+
+.post-card .card-header {
+  background-color: transparent;
+  border-bottom: 1px solid #3a3a3a;
+  padding: 1rem;
+}
+
+.post-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-username {
+  font-weight: 600;
+  color: #fff;
+}
+
+.post-timestamp {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.post-card .card-body {
+  padding: 1rem;
+  color: #fff;
+}
+
+.movie-reference {
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  border: 1px solid #3a3a3a;
+}
+
+.movie-card {
+  display: flex;
+  padding: 1rem;
+}
+
+.movie-poster {
+  width: 60px;
+  height: 90px;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.movie-poster:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-info {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.movie-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.movie-title a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.movie-title a:hover {
+  color: #dc2743;
+}
+
+.movie-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.movie-year {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.star-icon {
+  color: #ffc107;
+}
+
+.movie-director {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.75rem;
+}
+
+.view-details-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  align-self: flex-start;
+}
+
+.post-media {
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.post-media img,
+.post-media video {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.post-card .card-footer {
+  background-color: transparent;
+  border-top: 1px solid #3a3a3a;
+  padding: 0.75rem 1rem;
+}
+
+.post-card .btn-link {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.post-card .btn-link:hover {
+  color: #dc2743;
+}
+
+.comments-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.comment-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.comment-item:last-child {
+  border-bottom: none;
+}
+
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-username {
+  font-weight: 600;
+  color: #fff;
+}
+
+.comment-timestamp {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.comment-content {
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+.modal-content {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.modal-header {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.modal-footer {
+  border-top: 1px solid #3a3a3a;
+}
+
+.form-control {
+  background-color: #1a1a1a;
+  border: 1px solid #3a3a3a;
+  color: #fff;
+}
+
+.form-control:focus {
+  background-color: #1a1a1a;
+  border-color: #dc2743;
+  color: #fff;
+  box-shadow: none;
+}
+
+.posts-loading,
+.posts-error {
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .posts-container {
+    padding: 1rem 0;
+  }
+
+  .post-card {
+    border-radius: 0;
+    margin-bottom: 1rem;
+  }
+
+  .movie-card {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .movie-poster {
+    width: 50px;
+    height: 75px;
+    margin-bottom: 0;
+  }
+
+  .movie-info {
+    margin-left: 0.75rem;
+  }
+
+  .post-media img,
+  .post-media video {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .post-card .card-header,
+  .post-card .card-body,
+  .post-card .card-footer {
+    padding: 0.75rem;
+  }
+
+  .movie-reference {
+    margin: 0.75rem 0;
+  }
+
+  .movie-card {
+    padding: 0.75rem;
+  }
+
+  .post-media img,
+  .post-media video {
+    max-height: 300px;
+  }
+
+  .feed-toggle {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .feed-toggle .btn {
+    width: 100%;
+  }
+}
+
+/* Add styles for the movie suggestions dropdown */
+.movie-suggestions {
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.movie-suggestions .list-group-item {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.movie-suggestions .list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Style for the selected movie preview */
+.selected-movie {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s;
+}
+
+.selected-movie:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Style for image previews */
+.image-previews img {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: opacity 0.2s;
+}
+
+.image-previews img:hover {
+  opacity: 0.8;
+}
+
+/* Add styles for post images grid */
+.post-images {
+  margin-top: 1rem;
+}
+
+.post-images img {
+  border-radius: 8px;
+  transition: opacity 0.2s;
+}
+
+.post-images img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* Post Media Container Styles */
+.post-media-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-poster-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 100%;
+  max-height: 400px;
+}
+
+.movie-poster-container a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.movie-poster-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.movie-poster-container:hover .movie-poster-image {
+  transform: scale(1.05);
+}
+
+.movie-poster-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 15px;
+  color: white;
+}
+
+.movie-poster-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.uploaded-images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.uploaded-images-container img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.post-no-media {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} 

@@ -1,0 +1,480 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "username": "moviebuff42",
+      "name": "Alex Johnson",
+      "email": "alex.johnson@example.com",
+      "password": "hashed_password_here",
+      "bio": "Film enthusiast and aspiring critic. I love discussing cinema and discovering hidden gems. My favorite directors are Christopher Nolan, Denis Villeneuve, and Wes Anderson.",
+      "location": "San Francisco, CA",
+      "website": "https://alexjohnson.blog",
+      "profilePicture": "https://randomuser.me/api/portraits/men/32.jpg",
+      "joinDate": "2022-03-15",
+      "followers": [
+        "user2",
+        "user3",
+        "1dc7"
+      ],
+      "following": [
+        "user2"
+      ],
+      "favorites": [
+        1,
+        3,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "user2",
+      "username": "cinephile",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "hashed_password_here",
+      "bio": "Film student and aspiring director. I analyze every frame.",
+      "location": "New York, NY",
+      "website": "https://janesmith.portfolio.com",
+      "profilePicture": "https://randomuser.me/api/portraits/women/44.jpg",
+      "joinDate": "2022-04-20",
+      "followers": [
+        "user1"
+      ],
+      "following": [
+        "user1",
+        "user3"
+      ],
+      "favorites": [
+        2,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "user3",
+      "username": "filmfanatic",
+      "name": "Michael Brown",
+      "email": "michael.brown@example.com",
+      "password": "hashed_password_here",
+      "bio": "Movie lover with a passion for classic cinema and foreign films.",
+      "location": "Los Angeles, CA",
+      "website": "",
+      "profilePicture": "https://randomuser.me/api/portraits/men/67.jpg",
+      "joinDate": "2022-05-10",
+      "followers": [
+        "user2",
+        "1dc7"
+      ],
+      "following": [],
+      "favorites": [
+        1,
+        6,
+        9
+      ]
+    },
+    {
+      "id": "1dc7",
+      "name": "kalpana chhetri",
+      "username": "rahulchettri60@gmail.com",
+      "email": "rahulchettri60@gmail.com",
+      "password": "asdfgh",
+      "bio": "",
+      "location": "",
+      "website": "",
+      "profilePicture": "data:image/jpeg;base64,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",
+      "joinDate": "2025-03-13",
+      "followers": [],
+      "following": [
+        "user3",
+        "user1"
+      ],
+      "favorites": []
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "title": "Inception",
+      "year": 2010,
+      "director": "Christopher Nolan",
+      "genre": [
+        "Sci-Fi",
+        "Action",
+        "Thriller"
+      ],
+      "runtime": 148,
+      "rating": 8.8,
+      "plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+    },
+    {
+      "id": "2",
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "director": "Frank Darabont",
+      "genre": [
+        "Drama"
+      ],
+      "runtime": 142,
+      "rating": 9.3,
+      "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=6hB3S9bIaco"
+    },
+    {
+      "id": "3",
+      "title": "Parasite",
+      "year": 2019,
+      "director": "Bong Joon Ho",
+      "genre": [
+        "Drama",
+        "Thriller",
+        "Comedy"
+      ],
+      "runtime": 132,
+      "rating": 8.6,
+      "plot": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/ApiBzeaa95TNYliSbQ8pJv4Fje7.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=5xH0HfJHsaY"
+    },
+    {
+      "id": "4",
+      "title": "The Dark Knight",
+      "year": 2008,
+      "director": "Christopher Nolan",
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 152,
+      "rating": 9,
+      "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
+    },
+    {
+      "id": "5",
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "director": "Quentin Tarantino",
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 154,
+      "rating": 8.9,
+      "plot": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=s7EdQ4FqbhY"
+    },
+    {
+      "id": "6",
+      "title": "Dune",
+      "year": 2021,
+      "director": "Denis Villeneuve",
+      "genre": [
+        "Sci-Fi",
+        "Adventure"
+      ],
+      "runtime": 155,
+      "rating": 8,
+      "plot": "Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/jYEW5xZkZk2WTrdbMGAPFuBqbDc.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=8g18jFHCLXk"
+    },
+    {
+      "id": "7",
+      "title": "Everything Everywhere All at Once",
+      "year": 2022,
+      "director": "Daniel Kwan, Daniel Scheinert",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "runtime": 139,
+      "rating": 8.1,
+      "plot": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save the world by exploring other universes connecting with the lives she could have led.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/zGLHX92Gk96O1DJvLil7ObJTbaL.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=wxN1T1uxQ2g"
+    },
+    {
+      "id": "8",
+      "title": "The Godfather",
+      "year": 1972,
+      "director": "Francis Ford Coppola",
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 175,
+      "rating": 9.2,
+      "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=sY1S34973zA"
+    },
+    {
+      "id": "9",
+      "title": "The Batman",
+      "year": 2022,
+      "director": "Matt Reeves",
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "runtime": 176,
+      "rating": 7.9,
+      "plot": "When the Riddler, a sadistic serial killer, begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+      "backdropUrl": "https://image.tmdb.org/t/p/original/5P8SmMzSNYikXpxil6BYzJ16611.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=mqqft2x_Aa4"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev1",
+      "userId": "user1",
+      "movieId": 1,
+      "rating": 5,
+      "content": "A mind-bending masterpiece! Christopher Nolan has outdone himself with this intricate puzzle of a film. The concept of dream invasion is brilliantly executed, and the visual effects are stunning. Leonardo DiCaprio delivers a powerful performance as a man haunted by his past. The ending will leave you thinking for days.",
+      "date": "2023-05-10",
+      "likes": [
+        "user2",
+        "user3",
+        "1dc7"
+      ],
+      "comments": [
+        "com1",
+        "com2",
+        "2007",
+        "1d3e"
+      ],
+      "user": {
+        "id": "user1",
+        "name": "Alex Johnson",
+        "username": "moviebuff42",
+        "profilePicture": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      "movie": {
+        "id": "1",
+        "title": "Inception",
+        "posterUrl": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+        "genre": [
+          "Sci-Fi",
+          "Action",
+          "Thriller"
+        ],
+        "year": 2010
+      }
+    },
+    {
+      "id": "rev2",
+      "userId": "user1",
+      "movieId": 2,
+      "rating": 5,
+      "content": "One of the best movies ever made. The Shawshank Redemption is a powerful story of hope and redemption. Tim Robbins and Morgan Freeman deliver unforgettable performances. The film builds slowly but surely to one of the most satisfying conclusions in cinema history.",
+      "date": "2023-04-22",
+      "likes": [
+        "user3",
+        "1dc7"
+      ],
+      "comments": [],
+      "user": {
+        "id": "user1",
+        "name": "Alex Johnson",
+        "username": "moviebuff42",
+        "profilePicture": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      "movie": {
+        "id": "2",
+        "title": "The Shawshank Redemption",
+        "posterUrl": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+        "genre": [
+          "Drama"
+        ],
+        "year": 1994
+      }
+    },
+    {
+      "id": "rev3",
+      "userId": "user2",
+      "movieId": 4,
+      "rating": 5,
+      "content": "Heath Ledger's performance as the Joker is legendary. He completely disappears into the role, creating one of the most memorable villains in film history. The Dark Knight transcends the superhero genre to become a compelling crime drama with moral complexity and stunning action sequences.",
+      "date": "2023-03-15",
+      "likes": [
+        "user1",
+        "1dc7"
+      ],
+      "comments": [
+        "com3",
+        "e3e7",
+        "58ec"
+      ],
+      "user": {
+        "id": "user2",
+        "name": "Jane Smith",
+        "username": "cinephile",
+        "profilePicture": "https://randomuser.me/api/portraits/women/44.jpg"
+      },
+      "movie": {
+        "id": "4",
+        "title": "The Dark Knight",
+        "posterUrl": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "genre": [
+          "Action",
+          "Crime",
+          "Drama"
+        ],
+        "year": 2008
+      }
+    },
+    {
+      "id": "rev4",
+      "userId": "user3",
+      "movieId": 6,
+      "rating": 4.5,
+      "content": "Denis Villeneuve has crafted a visually stunning and emotionally resonant adaptation of Frank Herbert's classic novel. The scale is immense, the performances are stellar (especially Timothée Chalamet and Rebecca Ferguson), and Hans Zimmer's score is otherworldly. This is how you adapt a complex sci-fi epic for the screen.",
+      "date": "2023-02-18",
+      "likes": [
+        "user1",
+        "user2"
+      ],
+      "comments": []
+    },
+    {
+      "id": "rev5",
+      "userId": "user1",
+      "movieId": 7,
+      "rating": 5,
+      "content": "A mind-bending multiverse adventure that somehow balances absurdist comedy, martial arts action, and profound emotional depth. Michelle Yeoh delivers a career-defining performance, and the Daniels have created something truly original. One of the most creative films I've seen in years.",
+      "date": "2023-01-30",
+      "likes": [
+        "user2"
+      ],
+      "comments": [
+        "com4"
+      ]
+    },
+    {
+      "id": "6d68",
+      "userId": "1dc7",
+      "movieId": 8,
+      "rating": 4,
+      "content": "xzcvxcv",
+      "date": "2025-03-14",
+      "likes": [],
+      "comments": []
+    },
+    {
+      "id": "f260",
+      "userId": "1dc7",
+      "movieId": 5,
+      "rating": 5,
+      "content": "sdsf",
+      "date": "2025-03-14",
+      "likes": [],
+      "comments": []
+    }
+  ],
+  "comments": [
+    {
+      "id": "com1",
+      "reviewId": "rev1",
+      "userId": "user2",
+      "content": "I completely agree! The way Nolan plays with time and reality is incredible.",
+      "date": "2023-05-11"
+    },
+    {
+      "id": "com2",
+      "reviewId": "rev1",
+      "userId": "user3",
+      "content": "The ending still has me debating whether it was real or not. That's the mark of a great film!",
+      "date": "2023-05-12"
+    },
+    {
+      "id": "com3",
+      "reviewId": "rev3",
+      "userId": "user1",
+      "content": "Ledger's Joker is definitely the best comic book villain portrayal of all time.",
+      "date": "2023-03-16"
+    },
+    {
+      "id": "com4",
+      "reviewId": "rev5",
+      "userId": "user2",
+      "content": "This movie blew my mind! So many layers and such heart at the same time.",
+      "date": "2023-02-01"
+    },
+    {
+      "id": "e3e7",
+      "reviewId": "rev3",
+      "userId": "1dc7",
+      "content": "wow",
+      "date": "2025-03-13"
+    },
+    {
+      "id": "2007",
+      "reviewId": "rev1",
+      "userId": "1dc7",
+      "content": "wow",
+      "date": "2025-03-14"
+    },
+    {
+      "id": "1d3e",
+      "reviewId": "rev1",
+      "userId": "1dc7",
+      "content": "ewrw",
+      "date": "2025-03-14"
+    },
+    {
+      "id": "58ec",
+      "reviewId": "rev3",
+      "userId": "1dc7",
+      "content": "hi",
+      "date": "2025-03-14"
+    }
+  ],
+  "watchlist": [
+    {
+      "id": "watch1",
+      "userId": "user1",
+      "movieIds": [
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "watch2",
+      "userId": "user2",
+      "movieIds": [
+        1,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "watch3",
+      "userId": "user3",
+      "movieIds": [
+        2,
+        4,
+        5,
+        8
+      ]
+    }
+  ]
+}
